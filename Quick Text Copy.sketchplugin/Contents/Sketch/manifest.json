@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/schemas/sketch-plugin-manifest-schema.json",
+  "name": "Quick Text Copy",
+  "description": "从任何文本层快速复制和粘贴文本内容.",
+  "author": "阿贵",
+  "identifier": "com.example.quick-text-copy",
+  "version": "1.0.2",
+  "engines": {
+    "sketch": ">=98.0"
+  },
+  "commands": [
+    {
+      "name": "Copy Text",
+      "identifier": "copy-text-command",
+      "script": "./script.js",
+      "handler": "onCopyText",
+      "shortcut": "ctrl cmd c"
+    },
+    {
+      "name": "Paste Text",
+      "identifier": "paste-text-command",
+      "script": "./script.js",
+      "handler": "onPasteText",
+      "shortcut": "ctrl cmd v"
+    }
+  ]
+}
